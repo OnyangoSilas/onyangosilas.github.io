@@ -1,40 +1,57 @@
+/* General styling */
 body {
   font-family: Arial, sans-serif;
+  line-height: 1.6;
   margin: 0;
+  padding: 0;
   background-color: #f9f9f9;
   color: #333;
-  line-height: 1.6;
 }
 
 header {
-  background-color: #205072;
+  background-color: #007BFF;
   color: white;
-  padding: 2rem;
+  padding: 30px 20px;
   text-align: center;
 }
 
+main {
+  padding: 20px;
+}
+
 section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+  margin-bottom: 30px;
 }
 
-h2 {
-  color: #205072;
+/* Contact section styling */
+.contact-section {
+  background-color: #f0f4f8;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-ul {
-  list-style-type: square;
+.contact-section i {
+  color: #25D366;
+  margin-right: 8px;
 }
 
-a {
-  color: #205072;
+.contact-section a {
+  color: #007BFF;
   text-decoration: none;
+  margin-left: 5px;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #eee;
-  font-size: 0.9rem;
+  padding: 15px;
+  background-color: #f1f1f1;
+  font-size: 14px;
 }
