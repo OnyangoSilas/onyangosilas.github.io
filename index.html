@@ -1,58 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Onyango Silas | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onyango Silas (~S4R™) Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    html { scroll-behavior: smooth; }
+    .fade-in { opacity: 0; transform: translateY(20px); animation: fadeIn 1s forwards; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-400 { animation-delay: 0.4s; }
+    .delay-600 { animation-delay: 0.6s; }
+    @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
+    .typing { border-right: 2px solid white; white-space: nowrap; overflow: hidden; animation: typing 3s steps(40) infinite alternate; }
+    @keyframes typing { 0% { width: 0; } 100% { width: 100%; } }
+    img.rounded-full:hover { transform: scale(1.05); transition: transform 0.5s; }
+  </style>
 </head>
-<body>
-  <header>
+<body class="bg-gray-900 text-white font-sans transition-colors duration-500" id="body">
 
-    <h1>Onyango Silas</h1>
-    <p>Actuarial Science Student | Aspiring Data Analyst</p>
-  </header>
+<!-- NAVIGATION -->
+<nav class="fixed w-full bg-gray-900/90 backdrop-blur-md z-50 shadow-md">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <div class="text-xl font-bold">~S4R™</div>
+    <div class="space-x-6 flex items-center">
+      <a href="#about" class="hover:text-blue-400 transition">About</a>
+      <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+      <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+      <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+      <button id="themeToggle" class="ml-4 px-3 py-1 border rounded hover:bg-white hover:text-black transition">🌗</button>
+    </div>
+  </div>
+</nav>
 
-  <main>
-    <section class="about">
-      <h2>About Me</h2>
-      <p>
-        I am a passionate student of Actuarial Science with a strong interest in Information Technology. I specialize in Excel and Python for data analysis, and have basic web development skills (HTML & CSS). I'm also fluent in Luhya, Kiswahili, and English, and I enjoy working on language and community-related tech projects.
-      </p>
-    </section>
+<!-- HERO -->
+<section class="h-screen flex flex-col justify-center items-center text-center px-4">
+  <img src="profile.jpg" alt="Onyango Silas" class="w-40 h-40 rounded-full border-4 border-white mb-6 shadow-lg fade-in">
+  <h1 class="text-5xl md:text-7xl font-bold mb-4 fade-in">Onyango Silas (~S4R™)</h1>
+  <p class="text-lg md:text-xl text-gray-300 mb-6 fade-in delay-200 typing">
+    Actuarial Science Student | Aspiring Data Analyst
+  </p>
+  <div class="flex gap-4 fade-in delay-400">
+    <a href="#projects" class="bg-white text-black px-6 py-3 rounded-xl hover:scale-105 transition">View Projects</a>
+    <a href="CV.pdf" class="border border-white px-6 py-3 rounded-xl hover:bg-white hover:text-black transition">Download CV</a>
+  </div>
+</section>
 
+<!-- ABOUT -->
+<section id="about" class="py-20 px-6 max-w-3xl mx-auto text-center">
+  <h2 class="text-3xl font-bold mb-4 fade-in">About Me</h2>
+  <p class="text-gray-300 fade-in delay-200">
+    I am a passionate student of Actuarial Science with a strong interest in Information Technology. 
+    I specialize in Excel and Python for data analysis, and have basic web development skills (HTML & CSS). 
+    I'm fluent in Luhya, Kiswahili, and English, and enjoy working on language and community-related tech projects.
+  </p>
+</section>
 
-  <section class="skills">
-    <h2>Skills & Interests</h2>
-    <ul>
-      <li>Translation & Transcription (Luhya, Kiswahili, English)</li>
-      <li>Python for Data Analysis</li>
-      <li>Microsoft Excel</li>
-      <li>HTML & CSS</li>
-      <li>Language Documentation & NLP</li>
-    </ul>
-  </section>
-    
-    <section class="contact-section">
-      <h2>Contact Me</h2>
-      <p>
-        <strong><i class="fas fa-phone"></i> Call me:</strong>
-        <a href="tel:+254700117960">+254 700117960</a>
-      </p>
-      <p>
-        <strong><i class="fab fa-whatsapp"></i> WhatsApp:</strong>
-        <a href="https://wa.me/254700117960" target="_blank">Message me on WhatsApp</a>
-      </p>
-      <p>
-        <strong><i class="fas fa-envelope"></i> Email:</strong>
-        <a href="mailto:silasonyango019@gmail.com">silasonyango019@gmail.com</a>
-      </p>
-    </section>
-  </main>
+<!-- SKILLS -->
+<section id="skills" class="py-20 px-6 max-w-3xl mx-auto text-center bg-gray-800 rounded-2xl">
+  <h2 class="text-3xl font-bold mb-6 fade-in">Skills & Interests</h2>
+  <ul class="list-disc list-inside text-gray-300 space-y-2 fade-in delay-200">
+    <li>Translation & Transcription (Luhya, Kiswahili, English)</li>
+    <li>Python for Data Analysis</li>
+    <li>Microsoft Excel</li>
+    <li>HTML & CSS</li>
+    <li>Language Documentation & NLP</li>
+  </ul>
+</section>
 
-  <footer>
-    <p>© 2025 Onyango Silas. All rights reserved.</p>
-  </footer>
+<!-- PROJECTS -->
+<section id="projects" class="py-20 px-6">
+  <h2 class="text-3xl font-bold text-center mb-10 fade-in">Projects</h2>
+  <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+
+    <div class="bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition transform fade-in">
+      <img src="https://via.placeholder.com/400x200" alt="Real Ventures" class="rounded-lg mb-4">
+      <h3 class="text-xl font-semibold mb-2">Real Ventures Web App</h3>
+      <p class="text-gray-400 mb-4">Full-stack application with admin dashboard, JWT authentication, and contact system.</p>
+      <div class="flex justify-between">
+        <a href="#" class="text-blue-400 hover:underline">Live Demo →</a>
+        <a href="#" class="text-green-400 hover:underline">GitHub →</a>
+      </div>
+    </div>
+
+    <div class="bg-gray-900 p-6 rounded-2xl shadow-lg hover:scale-105 transition transform fade-in delay-200">
+      <img src="https://via.placeholder.com/400x200" alt="Statistics Work" class="rounded-lg mb-4">
+      <h3 class="text-xl font-semibold mb-2">Statistical & Actuarial Work</h3>
+      <p class="text-gray-400 mb-4">Correlation analysis, hypothesis testing, and risk modelling projects.</p>
+      <div class="flex justify-between">
+        <a href="#" class="text-blue-400 hover:underline">Live Demo →</a>
+        <a href="#" class="text-green-400 hover:underline">GitHub →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 px-6 text-center">
+  <h2 class="text-3xl font-bold mb-6 fade-in">Contact Me</h2>
+  <div class="space-y-4 text-lg fade-in delay-200">
+    <p><strong><i class="fas fa-phone"></i> Call me:</strong> <a href="tel:+254700117960" class="hover:underline">+254 700117960</a></p>
+    <p><strong><i class="fab fa-whatsapp"></i> WhatsApp:</strong> <a href="https://wa.me/254700117960" target="_blank" class="hover:underline">Message me on WhatsApp</a></p>
+    <p><strong><i class="fas fa-envelope"></i> Email:</strong> <a href="mailto:silasonyango019@gmail.com" class="hover:underline">silasonyango019@gmail.com</a></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 text-gray-500 text-sm">
+  © 2026 Onyango Silas (~S4R™)
+</footer>
+
+<script>
+  // Dark/Light toggle
+  const toggle = document.getElementById('themeToggle');
+  const body = document.getElementById('body');
+  toggle.addEventListener('click', () => {
+    if (body.classList.contains('bg-gray-900')) {
+      body.classList.remove('bg-gray-900', 'text-white');
+      body.classList.add('bg-white', 'text-black');
+    } else {
+      body.classList.remove('bg-white', 'text-black');
+      body.classList.add('bg-gray-900', 'text-white');
+    }
+  });
+</script>
+
 </body>
 </html>
