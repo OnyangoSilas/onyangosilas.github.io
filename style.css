@@ -1,204 +1,62 @@
-/* ==========================
-   GENERAL STYLING
-========================== */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #1f2937; /* Tailwind bg-gray-900 */
-  color: #ffffff;
-  transition: background-color 0.5s, color 0.5s;
+  font-family: Arial;
+  background: #1f2937;
+  color: white;
 }
 
-a {
-  text-decoration: none;
-}
-
-ul {
-  padding-left: 0;
-}
-
-ul li {
-  list-style-position: inside;
-}
-
-/* ==========================
-   NAVIGATION
-========================== */
 nav {
   position: fixed;
-  top: 0;
   width: 100%;
-  backdrop-filter: blur(6px);
-  background-color: rgba(31, 41, 55, 0.9); /* bg-gray-900/90 */
-  z-index: 50;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: rgba(31,41,55,0.9);
+  padding: 10px;
 }
 
-nav a {
-  margin-right: 1.5rem;
-  transition: color 0.3s;
+section {
+  padding: 80px 20px;
+  text-align: center;
+  scroll-margin-top: 80px;
 }
 
-nav a:hover {
-  color: #60a5fa; /* Tailwind blue-400 */
+img {
+  max-width: 100%;
 }
 
-#themeToggle {
-  cursor: pointer;
-}
-
-/* ==========================
-   HERO SECTION
-========================== */
-section h1 {
-  margin-bottom: 0.5rem;
-}
-
-section p {
-  margin-bottom: 1.5rem;
-}
-
-img.rounded-full {
-  border-radius: 9999px;
-  border: 4px solid white;
-  width: 10rem;
-  height: 10rem;
-  object-fit: cover;
-  margin-bottom: 1.5rem;
-  transition: transform 0.5s;
-}
-
-img.rounded-full:hover {
-  transform: scale(1.05);
+.rounded-full {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 
 .typing {
   border-right: 2px solid white;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 3s steps(40) infinite alternate;
+  animation: typing 3s steps(40) forwards;
 }
 
 @keyframes typing {
-  0% { width: 0; }
-  100% { width: 100%; }
+  from { width: 0 }
+  to { width: 100% }
 }
 
-/* ==========================
-   SECTIONS
-========================== */
-section {
-  padding: 5rem 1.5rem;
-}
-
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-section p, section ul, section li {
-  color: #d1d5db; /* gray-300 */
-  line-height: 1.7;
-}
-
-#skills ul li {
-  margin-bottom: 0.5rem;
-}
-
-/* ==========================
-   PROJECT CARDS
-========================== */
-#projects .grid {
+.grid {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-#projects .bg-gray-900 {
-  background-color: #1f2937;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
+.bg-gray-900 {
+  padding: 20px;
+  border-radius: 10px;
+  background: #1f2937;
+  transition: 0.3s;
 }
 
-#projects .bg-gray-900:hover {
+.bg-gray-900:hover {
   transform: scale(1.05);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
-}
-
-#projects img {
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-#projects h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-#projects p {
-  color: #9ca3af; /* gray-400 */
-}
-
-#projects a {
-  transition: color 0.3s;
-}
-
-#projects a:hover {
-  text-decoration: underline;
-}
-
-/* ==========================
-   CONTACT
-========================== */
-.contact-section p {
-  margin-bottom: 1rem;
+  box-shadow: 0 0 20px rgba(96,165,250,0.3);
 }
 
 .contact-section a {
   color: #60a5fa;
-  transition: color 0.3s;
-}
-
-.contact-section a:hover {
-  text-decoration: underline;
-}
-
-/* ==========================
-   FOOTER
-========================== */
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  color: #9ca3af;
-  font-size: 0.875rem;
-}
-
-/* ==========================
-   ANIMATIONS
-========================== */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 1s forwards;
-}
-
-.delay-200 { animation-delay: 0.2s; }
-.delay-400 { animation-delay: 0.4s; }
-.delay-600 { animation-delay: 0.6s; }
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ==========================
-   RESPONSIVE
-========================== */
-@media screen and (min-width: 768px) {
-  section h2 { font-size: 2.25rem; }
-  img.rounded-full { width: 12rem; height: 12rem; }
 }
