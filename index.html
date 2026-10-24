@@ -1,523 +1,476 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onyango Silas (~S4R™) | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="Portfolio of Onyango Silas (~S4R™), an Actuarial Science student, CIC Insurance Financial Advisor, and aspiring data analytics and IT professional.">
+  <meta name="author" content="Onyango Silas">
+  <title>Onyango Silas (~S4R™) | Professional Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet"
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="#home">~S4R<span>™</span></a>
 
-<!-- =========================
-NAVBAR
-========================= -->
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation" aria-expanded="false"
+        aria-controls="navLinks">
+        <i class="fas fa-bars"></i>
+      </button>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">~S4R™</div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-        </ul>
-
-        <button id="themeToggle">
-            <i class="fas fa-moon"></i>
-        </button>
+      <button class="theme-toggle" id="themeToggle"
+        aria-label="Switch color theme" title="Switch color theme">
+        <i class="fas fa-moon"></i>
+      </button>
     </nav>
-</header>
+  </header>
 
-<!-- =========================
-HERO
-========================= -->
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
 
-<section class="hero">
+          <h1>Onyango Silas <span>(~S4R™)</span></h1>
 
-    <div class="hero-content">
+          <h2>Actuarial Science <span>•</span> Financial Services
+            <span>•</span> Data & Technology</h2>
 
-        <img src="images/Actuary Image.jpeg"
-             alt="Onyango Silas"
-             class="profile-image">
+          <p class="hero-description">
+            I bring together quantitative thinking, financial advisory,
+            data analysis, research, and technology to understand problems
+            and develop practical solutions.
+          </p>
 
-        <h1>Onyango Silas (~S4R™)</h1>
-
-        <h2>
-    Actuarial Science with IT • Data Analyst • IT & Digital Systems
-</h2>
-
-<p>
-    Building practical solutions through data analysis, statistical thinking,
-    digital systems, and technology, with interests in insurance, finance,
-    fintech, and data-driven decision-making.
-</p>
-
-        <div class="hero-buttons">
-
-            <a href="#projects" class="btn primary-btn">
-                View Projects
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              <i class="fas fa-folder-open"></i> Explore My Work
             </a>
-
-            <a href="docs/SilasOnyango_CV.pdf"
-               class="btn secondary-btn"
-               target="_blank">
-               Download CV
+            <a class="btn btn-outline" href="docs/SilasOnyango_CV.pdf"
+              target="_blank" rel="noopener">
+              <i class="fas fa-file-pdf"></i> View CV
             </a>
+          </div>
 
+          <div class="hero-links">
+            <a href="https://github.com/OnyangoSilas"
+              target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="mailto:silasonyango019@gmail.com">
+              <i class="fas fa-envelope"></i> Email
+            </a>
+            <a href="https://wa.me/254700117960"
+              target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+          </div>
         </div>
 
-    </div>
+        <div class="hero-visual">
+          <div class="profile-frame">
+            <img src="images/Actuary%20Image.jpeg"
+              alt="Portrait of Onyango Silas"
+              class="profile-image">
+          </div>
+          <div class="floating-label">
+            <i class="fas fa-chart-line"></i>
+            Learning. Analysing. Building.
+          </div>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2 class="section-title">About Me</h2>
 
-<!-- =========================
-ABOUT
-========================= -->
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I am an Actuarial Science student with interests spanning
+              insurance, financial services, data analytics, information
+              technology, and research. I am interested in how mathematics,
+              statistics, and technology can support sound decisions.
+            </p>
 
-<section id="about" class="section">
+            <p>
+              As a Financial Advisor with CIC Insurance, I engage with
+              insurance solutions and financial protection. My analytical
+              interests include data cleaning, statistical analysis,
+              visualization, and reporting using tools such as Excel,
+              Python, R, and Power BI.
+            </p>
 
-    <h2 class="section-title">About Me</h2>
+            <p>
+              I also explore digital data systems and web development.
+              I aim to keep expanding my practical skills through projects,
+              continuous learning, and real-world experience.
+            </p>
+          </div>
 
-    <div class="about-container">
+          <aside class="info-card">
+            <h3>Professional Snapshot</h3>
+            <div class="info-row">
+              <i class="fas fa-graduation-cap"></i>
+              <div><strong>Academic field</strong><span>Actuarial Science</span></div>
+            </div>
+            <div class="info-row">
+              <i class="fas fa-briefcase"></i>
+              <div><strong>Current role</strong><span>Financial Advisor — CIC Insurance</span></div>
+            </div>
+            <div class="info-row">
+              <i class="fas fa-chart-bar"></i>
+              <div><strong>Analytical interests</strong><span>Risk, statistics, and data</span></div>
+            </div>
+            <div class="info-row">
+              <i class="fas fa-laptop-code"></i>
+              <div><strong>Technology interests</strong><span>Data systems and web development</span></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
 
-        <p>
-            I am a BSc. Actuarial Science with IT graduate with a strong interest
-            in data analytics, information technology, insurance, finance,
-            fintech, and digital financial systems.
+    <!-- EXPERIENCE -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <p class="eyebrow">MY PROFESSIONAL JOURNEY</p>
+        <h2 class="section-title">Experience</h2>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <p class="timeline-date">Current role</p>
+              <h3>Financial Advisor</h3>
+              <h4>CIC Insurance</h4>
+              <p>
+                Engage prospective and existing clients, explain relevant
+                insurance solutions, understand client needs, and support
+                informed decisions about financial protection.
+              </p>
+              <span class="tag">Financial Services</span>
+              <span class="tag">Client Engagement</span>
+              <span class="tag">Insurance</span>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <p class="timeline-date">May – July 2026</p>
+              <h3>Industrial Attachment</h3>
+              <h4>LVCT Health</h4>
+              <p>
+                Gained practical exposure to data management, monitoring
+                and evaluation, data quality, analysis, reporting, and
+                dashboard development. Worked with tools and workflows
+                involving Excel, Power BI, R, and digital data systems.
+              </p>
+              <span class="tag">Data Management</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">Monitoring & Evaluation</span>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <p class="timeline-date">Academic and personal projects</p>
+              <h3>Data Analysis & Technology Projects</h3>
+              <p>
+                Develop practical skills through data analysis,
+                statistical exploration, database-backed applications,
+                and personal web development projects.
+              </p>
+              <span class="tag">Excel</span>
+              <span class="tag">Python</span>
+              <span class="tag">Web Development</span>
+            </div>
+          </article>
+        </div>
+        <p class="note">
+          Project descriptions and experience details should be adjusted
+          to match your actual responsibilities and completed work.
         </p>
+      </div>
+    </section>
 
-        <p>
-            My training combines actuarial mathematics, statistics, computing,
-            and analytical thinking, allowing me to approach problems from both
-            quantitative and technological perspectives.
-        </p>
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="eyebrow">WHAT I WORK WITH</p>
+        <h2 class="section-title">Skills & Competencies</h2>
 
-        <p>
-            During my industrial attachment at LVCT Health, I gained practical
-            experience in data management, data quality, monitoring and
-            evaluation, research support, digital data collection, statistical
-            analysis, and health information systems.
-        </p>
-
-        <p>
-            I enjoy transforming raw data into structured information,
-            meaningful visualizations, and practical digital solutions.
-        </p>
-
-    </div>
-
-</section>
-
-<!-- =========================
-SKILLS
-========================= -->
-
-<section id="skills" class="section skills-section">
-
-    <h2 class="section-title">Skills & Competencies</h2>
-
-    <div class="skills-grid">
-
-        <div class="skill-card">
-            <h3>Data Analytics</h3>
-            <ul>
-                <li>Excel</li>
-                <li>Python</li>
-                <li>R</li>
-                <li>Data Cleaning</li>
-                <li>Statistical Analysis</li>
-                <li>Data Visualization</li>
-            </ul>
-        </div>
-
-        <div class="skill-card">
-            <h3>Business Intelligence</h3>
-            <ul>
-                <li>Power BI</li>
-                <li>Looker Studio</li>
-                <li>Dashboard Development</li>
-                <li>KPI Reporting</li>
-                <li>Data Transformation</li>
-            </ul>
-        </div>
-
-        <div class="skill-card">
-            <h3>IT & Digital Systems</h3>
-            <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>MySQL</li>
-                <li>XAMPP</li>
-                <li>System Development</li>
-            </ul>
-        </div>
-
-        <div class="skill-card">
-            <h3>Data Collection & Research</h3>
-            <ul>
-                <li>KoboToolbox</li>
-                <li>ODK</li>
-                <li>REDCap</li>
-                <li>Google Forms</li>
-                <li>Survey Design</li>
-                <li>Data Quality Assessment</li>
-            </ul>
-        </div>
-
-        <div class="skill-card">
+        <div class="card-grid">
+          <article class="feature-card">
+            <div class="card-icon"><i class="fas fa-calculator"></i></div>
             <h3>Actuarial & Quantitative</h3>
-            <ul>
-                <li>Statistics</li>
-                <li>Probability</li>
-                <li>Mathematics</li>
-                <li>Actuarial Concepts</li>
-                <li>Quantitative Analysis</li>
-            </ul>
+            <p>Mathematics, probability, statistics, risk concepts,
+              and an interest in actuarial modelling.</p>
+            <div class="tags">
+              <span class="tag">Mathematics</span>
+              <span class="tag">Statistics</span>
+              <span class="tag">Risk Analysis</span>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-icon"><i class="fas fa-handshake"></i></div>
+            <h3>Financial Services</h3>
+            <p>Insurance advisory, client communication, understanding
+              client needs, and explaining financial protection options.</p>
+            <div class="tags">
+              <span class="tag">Insurance</span>
+              <span class="tag">Advisory</span>
+              <span class="tag">Communication</span>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-icon"><i class="fas fa-chart-column"></i></div>
+            <h3>Data Analytics</h3>
+            <p>Working with data to clean, organize, analyse, visualize,
+              and communicate findings.</p>
+            <div class="tags">
+              <span class="tag">Excel</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">R</span>
+              <span class="tag">Python</span>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-icon"><i class="fas fa-database"></i></div>
+            <h3>Data Systems & Research</h3>
+            <p>Exposure to digital data collection, data quality,
+              reporting, and research support workflows.</p>
+            <div class="tags">
+              <span class="tag">KoboToolbox</span>
+              <span class="tag">ODK</span>
+              <span class="tag">REDCap</span>
+              <span class="tag">SQL</span>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-icon"><i class="fas fa-code"></i></div>
+            <h3>Information Technology</h3>
+            <p>Building and improving websites and exploring
+              database-driven digital applications.</p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">PHP</span>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="card-icon"><i class="fas fa-file-lines"></i></div>
+            <h3>Reporting & Communication</h3>
+            <p>Organizing findings, preparing reports, documenting work,
+              and communicating technical information clearly.</p>
+            <div class="tags">
+              <span class="tag">Reporting</span>
+              <span class="tag">Documentation</span>
+              <span class="tag">Presentation</span>
+            </div>
+          </article>
+        </div>
+        <p class="note">Tools shown represent your stated experience and interests; keep the list aligned with what you can demonstrate.</p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-intro">
+          A growing collection of analytical, financial, research,
+          and technology projects.
+        </p>
+
+        <div class="card-grid project-grid">
+          <article class="project-card">
+            <img src="images/Chess123.jpg" alt="Business web application preview"
+              loading="lazy">
+            <div class="project-body">
+              <span class="project-type">Web Development</span>
+              <h3>Real Ventures Web Project</h3>
+              <p>
+                A business website project exploring digital presentation,
+                user interaction, and business functionality.
+              </p>
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <a class="text-link"
+                href="https://github.com/OnyangoSilas"
+                target="_blank" rel="noopener">
+                Explore my GitHub <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-placeholder">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="project-body">
+              <span class="project-type">Data Analytics</span>
+              <h3>PMTCT Data Management System</h3>
+              <p>
+                A personal project involving structured data entry,
+                validation, database storage, and reporting workflows.
+              </p>
+              <div class="tags">
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Power BI</span>
+              </div>
+              <span class="project-status">Project summary — demo link to be added</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-placeholder">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <div class="project-body">
+              <span class="project-type">Actuarial Research</span>
+              <h3>Credit Risk & Actuarial Modelling</h3>
+              <p>
+                An academic research direction exploring income shocks,
+                consumer credit risk, and expected credit losses.
+              </p>
+              <div class="tags">
+                <span class="tag">Credit Risk</span>
+                <span class="tag">Modelling</span>
+                <span class="tag">Statistics</span>
+              </div>
+              <span class="project-status">Research concept — not presented as completed work</span>
+            </div>
+          </article>
         </div>
 
-        <div class="skill-card">
-            <h3>Professional Interests</h3>
-            <ul>
-                <li>Insurance</li>
-                <li>Finance</li>
-                <li>FinTech</li>
-                <li>Digital Financial Systems</li>
-                <li>Risk & Data Analytics</li>
-            </ul>
+        <div class="center-action">
+          <a class="btn btn-primary"
+            href="https://github.com/OnyangoSilas"
+            target="_blank" rel="noopener">
+            View GitHub Repository <i class="fab fa-github"></i>
+          </a>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container">
+        <p class="eyebrow">ACADEMIC BACKGROUND</p>
+        <h2 class="section-title">Education & Development</h2>
 
-</section>
-
-<!-- =========================
-EXPERIENCE
-========================= -->
-
-<section id="experience" class="section">
-
-    <h2 class="section-title">Experience & Practical Exposure</h2>
-
-    <div class="timeline">
-
-        <div class="timeline-item">
-            <h3>Industrial Attachment — LVCT Health</h3>
-
+        <div class="education-card">
+          <div class="card-icon"><i class="fas fa-user-graduate"></i></div>
+          <div>
+            <h3>Actuarial Science with IT</h3>
+            <p class="education-status">Undergraduate studies</p>
             <p>
-                Gained practical experience in data management, monitoring and
-                evaluation, data quality assessment, statistical analysis,
-                digital data collection, KenyaEMR data processes, and health
-                information systems.
+              Academic interests include mathematics, probability,
+              statistics, insurance, financial risk, information technology,
+              and data analysis.
             </p>
+            <p class="note">
+              Update the university name and expected completion date
+              to reflect your current official academic records.
+            </p>
+          </div>
         </div>
 
-        <div class="timeline-item">
-            <h3>Data Analytics & Business Intelligence</h3>
-
+        <div class="education-card">
+          <div class="card-icon"><i class="fas fa-book-open"></i></div>
+          <div>
+            <h3>Continuous Learning</h3>
             <p>
-                Cleaned, transformed, analyzed, and visualized datasets using
-                Excel, R, Power BI, and Looker Studio. Developed dashboards,
-                reports, indicators, and analytical outputs from structured
-                datasets.
+              Developing practical capabilities in analytics, programming,
+              digital data systems, financial services, and research.
             </p>
-        </div>
-
-        <div class="timeline-item">
-            <h3>Digital Data Collection & Research Tools</h3>
-
-            <p>
-                Created and deployed practice data collection tools using
-                KoboToolbox, ODK, REDCap, Google Sheets, and HTML-based forms
-                to strengthen practical skills in digital data collection and
-                data management.
+            <p class="note">
+              Verified certificates can be added here when available.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact-layout">
+        <div>
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2 class="section-title">Contact Me</h2>
+          <p>
+            For professional discussions, collaboration, project enquiries,
+            and other opportunities, feel free to get in touch.
+          </p>
         </div>
 
-        <div class="timeline-item">
-            <h3>IT & Software Development</h3>
-
-            <p>
-                Developed practical web-based systems using HTML, CSS,
-                JavaScript, PHP, MySQL, and XAMPP, including a personal PMTCT
-                data management system and other business-oriented web projects.
-            </p>
-        </div>
-
-        <div class="timeline-item">
-            <h3>Technical Experience</h3>
-
-            <p>
-                Gained technical workplace exposure through a technician role
-                at the American Embassy in Kenya, strengthening practical IT,
-                troubleshooting, and workplace skills.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================
-PROJECTS
-========================= -->
-
-<section id="projects" class="section">
-
-    <h2 class="section-title">Featured Projects</h2>
-
-    <div class="project-grid">
-
-        <div class="project-card">
-
-            <img src="images/PMTCT-System.jpg"
-                 alt="PMTCT Data Management System">
-
-            <h3>PMTCT Data Management System</h3>
-
-            <p>
-                A PHP and MySQL-based data management system developed to
-                capture, validate, store, and manage PMTCT programme data.
-            </p>
-
-        </div>
-
-        <div class="project-card">
-
-            <img src="images/PowerBI-Dashboard.jpg"
-                 alt="Power BI Data Dashboard">
-
-            <h3>Power BI Analytics & Dashboards</h3>
-
-            <p>
-                Cleaned and transformed datasets, developed analytical
-                measures, and created interactive dashboards for KPI
-                monitoring and data-driven reporting.
-            </p>
-
-        </div>
-
-        <div class="project-card">
-
-            <img src="images/R-Analysis.jpg"
-                 alt="R Data Analysis Project">
-
-            <h3>R Data Analysis</h3>
-
-            <p>
-                Applied R for data cleaning, statistical analysis,
-                transformation, visualization, and exploration of structured
-                datasets.
-            </p>
-
-        </div>
-
-        <div class="project-card">
-
-            <img src="images/Looker-Dashboard.jpg"
-                 alt="Looker Studio Dashboard">
-
-            <h3>Looker Studio Analytics</h3>
-
-            <p>
-                Developed interactive reports and visualizations from cleaned
-                and transformed datasets for analytical presentation.
-            </p>
-
-        </div>
-
-        <div class="project-card">
-
-            <img src="images/Data-Collection.jpg"
-                 alt="Digital Data Collection Tools">
-
-            <h3>Digital Data Collection Tools</h3>
-
-            <p>
-                Created and deployed practical data collection forms using
-                KoboToolbox, ODK, REDCap, Google Sheets, and HTML forms.
-            </p>
-
-        </div>
-
-        <div class="project-card">
-
-            <img src="images/Real-Ventures.jpg"
-                 alt="Real Ventures Web Project">
-
-            <h3>Real Ventures Web Project</h3>
-
-            <p>
-                A business-oriented web project focused on digital presence,
-                service presentation, and future business management
-                capabilities.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================
-ACHIEVEMENTS
-========================= -->
-
-<section id="achievements" class="section">
-
-    <h2 class="section-title">Achievements & Practical Milestones</h2>
-
-    <div class="skills-grid">
-
-        <div class="skill-card">
-            <h3>Data Transformation</h3>
-            <p>
-                Worked with raw datasets and transformed them into structured
-                longitudinal and analysis-ready formats.
-            </p>
-        </div>
-
-        <div class="skill-card">
-            <h3>PMTCT System</h3>
-            <p>
-                Designed and developed a working local PMTCT data management
-                system using PHP, MySQL, and XAMPP.
-            </p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Dashboard Development</h3>
-            <p>
-                Built analytical dashboards and reports using Power BI and
-                Looker Studio from cleaned and transformed data.
-            </p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Research & Data Quality</h3>
-            <p>
-                Participated in field-based data quality reviews, facility
-                support activities, data collection, and research-related work.
-            </p>
-        </div>
-
-        <div class="skill-card">
-            <h3>KenyaEMR Exposure</h3>
-            <p>
-                Gained practical exposure to patient-level data entry,
-                extraction, follow-up, and reporting processes within
-                KenyaEMR.
-            </p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Independent Learning</h3>
-            <p>
-                Built and deployed additional data collection and software
-                projects independently to strengthen practical technical
-                skills.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================
-CERTIFICATES
-========================= -->
-
-<section id="certificates" class="section">
-
-    <h2 class="section-title">
-        Certifications
-    </h2>
-
-    <div class="certificate-grid">
-
-        <div class="certificate-card">
-            Data Analysis
-        </div>
-
-        <div class="certificate-card">
-            Public Health
-        </div>
-
-        <div class="certificate-card">
-            Epidemiology
-        </div>
-
-        <div class="certificate-card">
-            Monitoring & Evaluation
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================
-CONTACT
-========================= -->
-
-<section id="contact" class="section">
-
-    <h2 class="section-title">
-        Contact Me
-    </h2>
-
-    <div class="contact-info">
-
-        <p>
+        <div class="contact-card">
+          <a href="mailto:silasonyango019@gmail.com" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            <span><strong>Email</strong><small>silasonyango019@gmail.com</small></span>
+          </a>
+          <a href="tel:+254700117960" class="contact-link">
             <i class="fas fa-phone"></i>
-            +254 700 117 960
-        </p>
-
-        <p>
-            <i class="fas fa-envelope"></i>
-            silasonyango019@gmail.com
-        </p>
-
-        <p>
+            <span><strong>Phone</strong><small>+254 700 117 960</small></span>
+          </a>
+          <a href="https://wa.me/254700117960"
+            target="_blank" rel="noopener" class="contact-link">
             <i class="fab fa-whatsapp"></i>
-            WhatsApp Available
-        </p>
-
-    </div>
-
-    <div class="social-links">
-
-        <a href="https://github.com/OnyangoSilas">
+            <span><strong>WhatsApp</strong><small>Start a conversation</small></span>
+          </a>
+          <a href="https://github.com/OnyangoSilas"
+            target="_blank" rel="noopener" class="contact-link">
             <i class="fab fa-github"></i>
-        </a>
+            <span><strong>GitHub</strong><small>Explore my code</small></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <a href="linkedin.com/in/silas-onyangos4r">
-            <i class="fab fa-linkedin"></i>
-        </a>
-
-        <a href="mailto:silasonyango019@gmail.com">
-            <i class="fas fa-envelope"></i>
-        </a>
-
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a class="logo" href="#home">~S4R<span>™</span></a>
+      <p>Actuarial Science · Financial Services · Data · Technology</p>
+      <p>© <span id="currentYear">2026</span> Onyango Silas. All rights reserved.</p>
+      <a href="#home" class="back-to-top">Back to top ↑</a>
     </div>
-
-</section>
-
-<footer>
-    <p>
-        © 2026 Onyango Silas (~S4R™)
-    </p>
-</footer>
-
-<script src="script.js"></script>
-
+  </footer>
 </body>
 </html>
